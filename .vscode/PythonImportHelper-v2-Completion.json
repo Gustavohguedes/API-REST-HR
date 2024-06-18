@@ -1,0 +1,142 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\ndb: List[User] = [\n    User(\n        id=UUID(\"42398675-0ac4-4882-ba64-3a63f015b205\"),\n        first_name=\"John\",\n        last_name=\"Doe\",\n        middle_name=\"Smith\",\n        gender=Gender.male,\n        roles=[Roles.Admin]\n    ),",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Gender(str, Enum):\n    male = \"male\"\n    female = \"female\"\nclass Roles(str, Enum):\n    Admin = \"admin\"\n    User = \"user\"\n    QA = \"QA\"\n    Dev = \"Dev\"\nclass User(BaseModel):\n    id: Optional[UUID] = uuid4()",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Roles(str, Enum):\n    Admin = \"admin\"\n    User = \"user\"\n    QA = \"QA\"\n    Dev = \"Dev\"\nclass User(BaseModel):\n    id: Optional[UUID] = uuid4()\n    first_name: str\n    last_name: str\n    middle_name: Optional[str] = None",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(BaseModel):\n    id: Optional[UUID] = uuid4()\n    first_name: str\n    last_name: str\n    middle_name: Optional[str] = None\n    gender: Gender\n    roles: List[Roles]",
+        "detail": "models",
+        "documentation": {}
+    }
+]
